@@ -1,9 +1,9 @@
-# Assembleur basé sur les graphes de Debruijn
+**Assembleur basé sur les graphes de Debruijn**
 
 Vous trouverez la description complète du TP [ici]( 
 https://docs.google.com/document/d/1P4v3bHbSurD7RXA-ldVwmtNKGvWsnBae51RMGye_KLs/edit?usp=sharing).
 
-## Introduction
+**Introduction**
 
 L’objectif de ce TP sera d’assembler le génome de l’entérovirus A71. Ce génome présente l’intérêt d’être très court: 7408 nucléotides, linéaire et non segmenté.
 Le fichier fastq dont vous disposez a été généré à l’aide du programme ART [Huang 2011] via la commande:
@@ -15,7 +15,7 @@ eva71.fna : génome du virus d’intérêt
 eva71_plus_perfect.fq: lectures 
 
 
-## Installation des dépendances
+**Installation des dépendances**
 
 Vous utiliserez les librairies networkx, pytest et pylint de Python:
 
@@ -23,18 +23,18 @@ Vous utiliserez les librairies networkx, pytest et pylint de Python:
 pip3 install --user networkx pytest pylint pytest-cov
 ```
 
-## Utilisation
+**Utilisation**
 
 Vous créerez un programme Python3 nommé debruijn.py dans le dossier debruijn/.  Il prendra en argument :
  -i fichier fastq single end
  -k taille des kmer (optionnel - default 21)
  -o fichier output avec les contigs
 
-## Tests
+**Tests**
 
 Vous testerez vos fonctions à l’aide de la commande pytest --cov=debruijn à exécuter dans le dossier debruijn-tp/. En raison de cette contrainte, les noms des fonctions ne seront pas libre. Il sera donc impératif de respecter le nom des fonctions “imposées”, de même que leur caractéristique et paramètres. 
 Vous vérifierez également la qualité syntaxique de votre programme en exécutant la commande: pylint debruijn.py
 
-## Contact
+**Contact**
 
 En cas de questions, vous pouvez me contacter par email: amine.ghozlane[at]pasteur.fr
